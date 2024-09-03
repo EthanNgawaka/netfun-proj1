@@ -3,13 +3,15 @@ Cant be assed with formatting
 
 Run main.py:
 ```
-> python3 main.py
+> python3 main.py PORT_NUMBER
 ```
+PORT_NUMBER is an optional flag and is 12000 by default
 
 then go to:
-http://192.168.0.20:12000/index.html
+http://LOCAL_IP:PORT_NUMBER/index.html
+
 for the base page
-(if ur ip is different jut change the var PORT in code)
+
 404 error page can be found by going to any other file:
 
-http://192.168.0.20:12000/a_file_that_doesnt_exist.png
+http://LOCAL_IP:PORT_NUMBER/a_file_that_doesnt_exist.png
