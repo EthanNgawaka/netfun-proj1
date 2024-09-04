@@ -2,8 +2,11 @@ from socket import *
 import sys
 
 PORT = 12000 # def to 12000 for port
-if sys.argv[1]:
-    PORT = int(sys.argv[1])
+try:
+    if sys.argv[1]:
+        PORT = int(sys.argv[1])
+except Exception:
+    print("No port provided, using default of 12000")
 
 SERVER_SOCKET = socket(AF_INET, SOCK_STREAM)
 
